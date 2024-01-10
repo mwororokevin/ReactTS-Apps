@@ -7,6 +7,7 @@ function App() {
   const [specialCharacters, setSpecialCharacters] = useState(false)
   const [randomPassword, setRandomPassword] = useState("")
 
+
   const generateRandomPassword = () => {
     let password: string = ""
 
@@ -27,7 +28,8 @@ function App() {
   }
 
   const copyRandomPassword = () => {
-
+    window.navigator.clipboard.writeText(randomPassword)
+    window.alert("Random Password Copied to Clipboard")
   }
 
   return (

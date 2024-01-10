@@ -12,10 +12,7 @@ function App() {
 
     let passwordStringPool = "abcdefghijklmnopqrstuvwxyz"
 
-    if (uppercase) {
-      passwordStringPool += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-      console.log(uppercase)
-    }
+    if (uppercase) passwordStringPool += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     if (number) passwordStringPool += "0123456789"
 
@@ -23,25 +20,22 @@ function App() {
 
     for (let i: number = 0; i < Number(passwordLength); i++) {
       const randomNumber: number = Math.floor(Math.random() * passwordStringPool.length)
-      // console.log(randomNumber)
       password += passwordStringPool.charAt(randomNumber)
     }
 
-    console.log(passwordStringPool)
-
     setRandomPassword(password)
-
   }
 
   const copyRandomPassword = () => {
 
   }
 
-
   return (
     <div className="w-screen h-screen flex justify-center items-center">
-      <div className="flex flex-col px-4 py-8 w-screen">
-        <h1 className="font-bold text-xl text-center mb-4">Random Password Generator</h1>
+      <div className="flex flex-col py-8 w-10/12 md:w-[350px] mx-auto">
+        <h1 className="font-bold text-xl text-center mb-4">
+          Random Password Generator
+        </h1>
         <div className="flex flex-row my-4">
           <input
             type="text"
@@ -93,7 +87,7 @@ function App() {
               max="25"
               value={passwordLength}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => { setPasswordLength(e.target.value) }}
-              className="text-blue-600 bg-gray-100 rounded-md border-2 border-solid border-black "
+              className="text-blue-600 bg-gray-100 rounded-[5px] border-2 border-solid border-black px-1"
             />
             <label className="mr-4 ml-2 font-bold text-lg">Password Length</label>
           </div>

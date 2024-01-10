@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="w-screen h-screen flex items-end" style={{ background: backgroundColor }}>
       <div className="w-screen h-20 flex justify-center items-center">
-        <label className="w-[130px] capitalize font-bold text-silver border-0 mb-12">
+        <label className="w-44 capitalize font-bold text-silver mb-12 border-2 border-solid border-[#ffffff00]">
           <select
-            className="bg-[#ffffff00] capitalize w-[100%]"
+            className="bg-[#ffffff00] capitalize w-[100%] border-2 border-solid border-white"
             name={backgroundColor}
             onChange={onChange}
           >
@@ -21,7 +21,7 @@ function App() {
               <option
                 key={option.id}
                 value={option.value}
-                className="bg-white text-[#333] h-max w-max font-bold cursor py-4 px-6 border-0"
+                className="bg-white text-[#333] tracking-[4px] border-2 boder-solid border-[#ffffff00] h-max w-max font-bold cursor py-4 px-6"
                 style={{ background: option.value }}
               >
                 {option.label}

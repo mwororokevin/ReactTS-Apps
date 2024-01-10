@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="w-screen h-screen flex justify-center items-center">
-      <div className="flex flex-col py-8 w-10/12 md:w-6/12 lg:max-width[400px] mx-auto">
+      <div className="flex flex-col py-8 w-10/12 md:w-6/12 lg:max-w-[400px] 2xl-max-w-[450px] mx-auto">
         <h1 className="font-bold text-xl text-center mb-4">
           Random Password Generator
         </h1>
@@ -54,7 +54,7 @@ function App() {
             Copy
           </button>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:flex-row">
           <div className=" mt-2 mb-2">
             <input
               type="checkbox"

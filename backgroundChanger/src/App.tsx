@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="w-screen h-screen flex items-end" style={{ background: backgroundColor }}>
       <div className="w-screen h-20 flex justify-center items-center">
-        <label className="w-44 capitalize font-bold text-silver mb-12 border-2 border-solid border-[#ffffff00]">
+        <label className="w-44 capitalize font-bold text-silver mb-12 border-2 border-solid border-[#ffffff00] focus:border-2 focus:border-white focus:border-solid">
           <select
-            className="bg-[#ffffff00] capitalize w-[100%] border-2 border-solid border-white"
+            className="bg-[#ffffff00] capitalize w-[100%] border-2 border-solid border-white focus:border-2 focus:border-white focus:border-solid"
             name={backgroundColor}
             onChange={onChange}
           >

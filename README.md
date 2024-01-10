@@ -2,10 +2,12 @@
 
 ## 1. Background Changer
 
+[Background Changer](https://github.com/mwororokevin/ReactTS-Apps/tree/master/backgroundChanger)
+
 Allows user to dynamically change the background color. Uses Tailwind and useState react hook.
 
-[backgroundChanger](https://github.com/mwororokevin/ReactTS-Apps/tree/master/backgroundChanger)
+## 2. Random Password Generator
 
-### Screen Shots
+[Random Password Generator](https://github.com/mwororokevin/ReactTS-Apps/tree/master/randomPasswordGenerator)
 
-![Green Background](./Project%20Screenshots/BackgroundChanger-Green-BG.png "Green Background")
+Generates random passwords while allowing users to add numbers, uppercase and special characters and vary the length of the password.
